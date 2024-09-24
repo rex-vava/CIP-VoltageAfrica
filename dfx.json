@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "VoltageAfrica_backend": {
+      "main": "src/VoltageAfrica_backend/main.mo",
+      "type": "motoko"
+    },
+    "VoltageAfrica_frontend": {
+      "dependencies": [
+        "VoltageAfrica_backend"
+      ],
+      "source": [
+        "src/VoltageAfrica_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "VoltageAfrica_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
